@@ -1,2 +1,6 @@
-<h1>Movies#show</h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+<h1><%= @movie.title %> <%= link_to "edit this movie", edit_movie_path(@movie)%> </h1>
+ Genre: <%= @movie.genre %>
+Year: <%= @movie.year%>
+Synopsis: <%= @movie.synopsis%>
+<img src=<%= @movie.picture %> />
+<%= link_to "movies", movies_path %>

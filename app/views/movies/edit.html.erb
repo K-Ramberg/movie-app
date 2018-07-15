@@ -1,1 +1,9 @@
-<h1>heres edit</h1>
+<h1>edit <%= @movie.title%></h1>
+<%=  form_for @movie do |movie|%>
+    Title: <%= movie.text_field :title %>
+    Genre: <%= movie.text_field :genre %>
+    Year: <%= movie.number_field :year %>
+    Synopsis: <%= movie.text_field :synopsis %>
+    Picture Url: <%= movie.text_field :picture %>
+    <%= movie.submit "confirm" %>
+<% end %>
