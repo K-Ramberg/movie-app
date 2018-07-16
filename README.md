@@ -1,1 +1,1 @@
-Still working on db fix. Model was destroyed before proper db rollback. now unable to conduct migrations, and re-generating the model does not return the migration version files the db rollback is seeking. app is broken until properly reverted to earlier commit.
+recreated db, reinstalled devise
